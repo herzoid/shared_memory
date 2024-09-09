@@ -1,0 +1,13 @@
+add_library(${CMAKE_PROJECT3_NAME} SHARED src/shmlib.cpp)
+
+set_target_properties(
+    ${CMAKE_PROJECT3_NAME} PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
+
+target_include_directories(${CMAKE_PROJECT3_NAME} PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
+
+#set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+#set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+#include(CPack)

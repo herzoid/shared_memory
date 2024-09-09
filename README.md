@@ -1,0 +1,1 @@
+This project provides a simple library for working with shared memory. One process writes data to a named shared memory segment, the other reads it. A named semaphore is used to ensure synchronization of memory access. The code for the reading and writing processes is also provided.
